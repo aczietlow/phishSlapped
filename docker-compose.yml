@@ -2,20 +2,21 @@ version: '3.8'
 
 services:
   stmp:
-#    image: mailhog/mailhog
-#    ports:
-#      - "1025:1025"
-#      - "8025:8025"
-    image: aczietlow/mailer
+    image: mailhog/mailhog
     ports:
-      - "25:25"
+      - "1026:1025"
+      - "8026:8025"
+#    image: aczietlow/mailer
+#    ports:
+#      - "25:25"
   gophish:
     image: gophish/gophish
     ports:
       - "3333:3333"
-      - "80:80"
+      - "8080:80"
     volumes:
       - ./config.json:/opt/gophish/config.json
+      - ./database/:/opt/gophish/database/
     environment:
       - ADMIN_PORT=3333
       - PHISHING_PORT=80

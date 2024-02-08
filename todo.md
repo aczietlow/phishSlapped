@@ -16,3 +16,7 @@ Got highly distracted and rabbit holed down a bunch of different holes
 - [ ] Send out emails
 - [ ] Write a google app script to respond to fake phishing emails
 - [ ] Add rules to outlook to automatically label phishing emails
+
+## WIP
+
+- Not able to connect to the docker service for gophish
