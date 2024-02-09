@@ -7,9 +7,10 @@ services:
       - "1025:1025"
       - "8025:8025"
   smtp:
-    image: aczietlow/mailer:latest
-    ports:
-      - "2525:25"
+    image: bytemark/smtp
+    restart: always
+#    ports:
+#      - "2525:25"
   gophish:
     image: gophish/gophish
     ports:
