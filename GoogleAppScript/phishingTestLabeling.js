@@ -5,7 +5,7 @@ function labelFakePhishing() {
 
     let phishingHeader = 'X-Gophish'
 
-    // Create a label. TODO only if it doesn't already exist.
+    // Create a label.
     let label = GmailApp.createLabel('A TRAP');
 
     for (let i = 0; i < threads.length; i++) {
